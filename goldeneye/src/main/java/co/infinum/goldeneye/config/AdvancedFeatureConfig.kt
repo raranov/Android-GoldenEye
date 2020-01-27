@@ -104,7 +104,7 @@ internal abstract class BaseAdvancedFeatureConfig<T : Any>(
             }
         }
 
-    override var antibandingMode = AntibandingMode.OFF
+    override var antibandingMode = AntibandingMode.AUTO
         get() = when {
             field != AntibandingMode.OFF -> field
             supportedAntibandingModes.contains(AntibandingMode.OFF) -> AntibandingMode.OFF
